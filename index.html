@@ -12,12 +12,43 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
+    <div class="header-container pad-percent">
+      <h2 class="app-title">Code Journal</h2>
+    </div>
   </header>
   <main>
-    <div data-view="edit-profile"></div>
+    <div data-view="edit-profile" class="pad-percent">
+      <div>
+        <h1 class="page-title">Edit Profile</h1>
+        <section>
+          <div class="row-1">
+            <div class="col-1">
+              <img src="images/placeholder-image-square.jpg" alt="placeholder">
+            </div>
+            <div class="col-2">
+              <label for="avatar">Avatar URL</label>
+              <input type="url" name="avatar">
+              <label for="username">Username</label>
+              <input type="text" name="username">
+              <label for="fullname">Full Name</label>
+              <input type="text" name="fullname">
+              <label for="location">Location</label>
+              <input type="text" name="location">
+            </div>
+          </div>
+          <div class="row-2">
+            <label for="">Bio</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>SAVE</button>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
