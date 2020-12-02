@@ -17,41 +17,41 @@
 </head>
 <body>
   <header>
-    <div class="header-container pad-percent">
-      <h2 class="app-title">Code Journal</h2>
+    <div class="header-container container">
+      <h2 class="app-title pad-percent">Code Journal</h2>
     </div>
   </header>
   <main>
-    <div data-view="edit-profile" class="pad-percent">
+    <div data-view="edit-profile" class="pad-percent container">
       <div>
         <h1 class="page-title">Edit Profile</h1>
         <section>
           <div class="row-1">
-            <div class="col-1">
+            <div class="col-1 column-half">
               <img src="images/placeholder-image-square.jpg" alt="placeholder">
             </div>
-            <div class="col-2">
+            <div class="col-2 row column-half">
               <div class="row-input">
                 <label for="avatar">Avatar URL</label>
-                <input type="url" name="avatar">
+                <input required type="url" name="avatar" id="avatar">
               </div>
               <div class="row-input">
                 <label for="username">Username</label>
-                <input type="text" name="username">
+                <input required type="text" name="username" id="username">
               </div>
               <div class="row-input">
                 <label for="fullname">Full Name</label>
-                <input type="text" name="fullname">
+                <input required type="text" name="fullname" id="fullname">
               </div>
               <div class="row-input">
                 <label for="location">Location</label>
-                <input type="text" name="location">
+                <input required type="text" name="location" id="location">
               </div>
             </div>
           </div>
           <div class="row-2">
-            <label for="">Bio</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="bio">Bio</label>
+            <textarea required name="bio" id="bio" cols="30" rows="10"></textarea>
             <button>SAVE</button>
           </div>
         </section>
