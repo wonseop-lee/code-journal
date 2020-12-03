@@ -14,11 +14,18 @@ var bio = document.querySelector('#bio');
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
+
   data.profile.username = username.value;
   data.profile.fullName = fullname.value;
   data.profile.location = loca.value;
   data.profile.avatarUrl = avatarInput.value;
   data.profile.bio = bio.value;
+
   form.reset();
   imgSrc.setAttribute('src', 'images/placeholder-image-square.jpg');
+  // });
+
+  // window.addEventListener('beforeunload', function(event){
+  const dataJSON = JSON.stringify(data);
+  localStorage.setItem('profile-data', dataJSON);
 });
