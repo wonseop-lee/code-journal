@@ -11,3 +11,8 @@ var data = {
   },
   entries: []
 };
+
+window.addEventListener('beforeunload', function (event) {
+  const dataJSON = JSON.stringify(data);
+  localStorage.setItem('profile-data', dataJSON);
+});

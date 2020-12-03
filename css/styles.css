@@ -1,0 +1,85 @@
+header {
+  background-color: #0d3b66;
+}
+
+body {
+  background-color: #fdfaed;
+}
+
+.header-container {
+  color: #f4d35e;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+}
+
+.app-title {
+  font-family: 'puritan', sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.page-title {
+  font-family: 'Noto Sans TC', sans-serif;
+  margin: 1.3rem 0;
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+.col-1 {
+  padding-bottom: 1rem;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+}
+
+.row-input {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 1rem;
+}
+
+textarea,
+input {
+  display: block;
+  border: 2px solid #cfcfcf;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #fdfaed;
+  font-family: 'puritan', sans-serif;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+textarea {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  height: 2.5rem;
+}
+
+textarea:focus,
+input:focus {
+  outline-color: #0d3b66;
+}
+
+label {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+button {
+  background-color: #f95738;
+  width: 90px;
+  height: 40px;
+  color: #faf0ca;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  float: right;
+}
