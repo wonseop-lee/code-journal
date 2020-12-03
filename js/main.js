@@ -23,7 +23,4 @@ form.addEventListener('submit', function (event) {
 
   form.reset();
   imgSrc.setAttribute('src', 'images/placeholder-image-square.jpg');
-
-  const dataJSON = JSON.stringify(data);
-  localStorage.setItem('profile-data', dataJSON);
 });
