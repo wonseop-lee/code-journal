@@ -18,47 +18,65 @@
 <body>
   <header>
     <div class="header-container container">
-      <h2 class="app-title">Code Journal</h2>
+      <h2 class="app-title column-full">Code Journal</h2>
     </div>
   </header>
   <main>
-    <div data-view="edit-profile" class=" container hidden">
+    <div data-view="edit-profile" class="container hidden">
+      <h1 class="page-title column-full">Edit Profile</h1>
+      <form id="form">
+        <div class="row-1 row">
+          <div class="col-1 column-half">
+            <img class="avatar-image" src="images/placeholder-image-square.jpg" alt="placeholder">
+          </div>
+          <div class="col-2 row column-half">
+            <div class="row-input">
+              <label for="avatar">Avatar URL</label>
+              <input required type="url" name="avatar" id="avatar">
+            </div>
+            <div class="row-input">
+              <label for="username">Username</label>
+              <input required type="text" name="username" id="username">
+            </div>
+            <div class="row-input">
+              <label for="fullname">Full Name</label>
+              <input required type="text" name="fullname" id="fullname">
+            </div>
+            <div class="row-input">
+              <label for="location">Location</label>
+              <input required type="text" name="location" id="location">
+            </div>
+          </div>
+        </div>
+        <div class="row-2 column-full">
+          <label for="bio">Bio</label>
+          <textarea required name="bio" id="bio" cols="30" rows="10"></textarea>
+          <button>SAVE</button>
+        </div>
+      </form>
+    </div>
+    <div data-view="profile" class="container">
       <div>
-        <h1 class="page-title">Edit Profile</h1>
-        <form id="form">
-          <div class="row-1 row">
+        <h1 class="page-title column-full">Example Name</h1>
+        <section>
+          <div class="row">
             <div class="col-1 column-half">
               <img class="avatar-image" src="images/placeholder-image-square.jpg" alt="placeholder">
             </div>
-            <div class="col-2 row column-half">
+            <div class="col-2 column-half">
               <div class="row-input">
-                <label for="avatar">Avatar URL</label>
-                <input required type="url" name="avatar" id="avatar">
+                <p><i class="far fa-user"></i> Example ID</p>
               </div>
               <div class="row-input">
-                <label for="username">Username</label>
-                <input required type="text" name="username" id="username">
+                <p><i class="fas fa-map-marker-alt"></i> Example, Location</p>
               </div>
               <div class="row-input">
-                <label for="fullname">Full Name</label>
-                <input required type="text" name="fullname" id="fullname">
-              </div>
-              <div class="row-input">
-                <label for="location">Location</label>
-                <input required type="text" name="location" id="location">
+                <p>This is an example bio. </p>
               </div>
             </div>
           </div>
-          <div class="row-2">
-            <label for="bio">Bio</label>
-            <textarea required name="bio" id="bio" cols="30" rows="10"></textarea>
-            <button>SAVE</button>
-          </div>
-        </form>
+        </section>
       </div>
-    </div>
-    <div data-view="profile" class=" container hidden">
-
     </div>
   </main>
   <script src="js/data.js"></script>
