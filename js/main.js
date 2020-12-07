@@ -102,3 +102,11 @@ function viewSwap(dataView) {
     }
   }
 }
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  if (data.profile.username === '') {
+    viewSwap('edit-profile');
+  } else {
+    viewSwap(data.view);
+  }
+});

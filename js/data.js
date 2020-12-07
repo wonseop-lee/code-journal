@@ -13,14 +13,11 @@ var data = {
 };
 
 window.addEventListener('beforeunload', function (event) {
-  if (data.profile.username !== '') {
-    const dataJSON = JSON.stringify(data);
-    localStorage.setItem('profile-data', dataJSON);
-  }
+  const dataJSON = JSON.stringify(data);
+  localStorage.setItem('profile-data', dataJSON);
 });
 
-// var profileData = [];
-// var previousProfileData = localStorage.getItem('profile-data');
-// if (previousProfileData !== null){
-//   profileData = JSON.parse(previousProfileData);
-// };
+var previousProfileData = localStorage.getItem('profile-data');
+if (previousProfileData !== null) {
+  data = JSON.parse(previousProfileData);
+}
