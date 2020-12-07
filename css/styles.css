@@ -37,7 +37,13 @@ body {
 .row-input {
   width: 100%;
   height: fit-content;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+label, p {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 textarea,
@@ -65,12 +71,6 @@ input {
 textarea:focus,
 input:focus {
   outline-color: #0d3b66;
-}
-
-label {
-  font-family: 'Noto Sans TC', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
 }
 
 button {
