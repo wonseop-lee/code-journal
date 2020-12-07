@@ -12,7 +12,7 @@ const $fullname = document.querySelector("input[name='fullname']");
 const $loca = document.querySelector("input[name='location']");
 const $bio = document.querySelector('#bio');
 
-form.addEventListener('submit', function (event) {
+$form.addEventListener('submit', function (event) {
   event.preventDefault();
 
   data.profile.username = $username.value;
@@ -21,8 +21,8 @@ form.addEventListener('submit', function (event) {
   data.profile.avatarUrl = $avatarInput.value;
   data.profile.bio = $bio.value;
 
-  form.reset();
-  imgSrc.setAttribute('src', 'images/placeholder-image-square.jpg');
+  $form.reset();
+  $imgSrc.setAttribute('src', 'images/placeholder-image-square.jpg');
 });
 
 function renderProfile(profileData) {
@@ -80,6 +80,7 @@ function viewSwap(dataView){
   for (let i = 0; i < $views.length; i++){
     if ($views[i].dataset.view === dataView){
       $views[i].setAttribute('class', 'container');
+      data.view = dataView;
     } else {
       $views[i].setAttribute('class', 'container hidden');
     }
